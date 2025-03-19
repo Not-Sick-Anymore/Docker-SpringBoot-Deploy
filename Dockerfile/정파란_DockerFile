@@ -1,0 +1,11 @@
+# 1. OpenJDK 17
+FROM openjdk:17-jdk
+
+# 2. 애플리케이션 실행
+WORKDIR /app
+
+# 3. JAR 파일을 컨테이너 내부 /app 디렉토리로 복사
+COPY step01_basic-0.0.1-SNAPSHOT.jar app.jar
+
+# 4. 실행 명령어 설정
+CMD ["java", "-jar", "app.jar"]
