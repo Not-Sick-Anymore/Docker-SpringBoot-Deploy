@@ -1,7 +1,7 @@
 <img src="https://capsule-render.vercel.app/api?type=waving&color=00C3FF&height=150&section=header" width="1000" />
 
 <div align="center">
-<h1 style="font-size: 36px;">🚀 Docker 기반 Spring Boot Application 배포</h1>
+<h1 style="font-size: 36px;">🚀 Docker 기반 Spring Boot Application 최적화 & 배포</h1>
 </div>
 </br>
 
@@ -17,10 +17,11 @@
 <br>
 
 
-# 🚀 Docker 기반 Spring Boot Application 배포
+# 🚀 Docker 기반 Spring Boot Application 최적화 & 배포
 
-본 레퍼지토리는 Spring Boot 애플리케이션을 Docker 컨테이너로 패키징하여, DockerHub에 업로드하고, 다른 사용자가 이를 Pull하여 실행하는 과정을 수행합니다. 세부 목표는 다음과 같습니다. 
+본 레퍼지토리는 Spring Boot 애플리케이션을 Docker 컨테이너로 패키징하여, DockerHub에 업로드하고, 다른 사용자가 이를 Pull하여 실행하는 과정을 수행합니다.
 
+### 세부 목표
 1. SpringBoot jar 파일 생성 & 실행
 2. 이미지 패키징 
 3. Dockerfile 최적화 
@@ -232,9 +233,16 @@ $docker ps
 | 단계 | 명령어 |
 | --- | --- |
 | **Spring Boot `.jar` 실행 확인** | `java -jar step01_basic-0.0.1-SNAPSHOT.jar` |
-| **Docker 이미지 빌드** | `docker build -t <DockerHub ID>/<Image Name:tag> .` |
-| **Docker Hub 로그인** | `docker login -u <DockerHub ID>` |
-| **Docker Hub에 푸시** | `docker push <DockerHub ID>/<Image Name:tag>` |
-| **팀원이 이미지 Pull** | `docker pull <(DockerID포함)Image Name:tag>` |
+| **Docker 이미지 Build** | `docker build -t <DockerHub ID>/<Image Name:tag> .` |
+| **DockerHub 로그인** | `docker login -u <DockerHub ID>` |
+| **DockerHub Push** | `docker push <DockerHub ID>/<Image Name:tag>` |
+| **이미지 Pull** | `docker pull <(DockerID포함)Image Name:tag>` |
 | **컨테이너 실행** | `docker run --name <Container Name> -p <Host Port:Container Port> <(DockerID포함)Image Name>` |
 | **실행 확인** | `docker ps` |
+
+
+## **🏝 고찰**
+- Docker를 활용한 Spring Boot 애플리케이션 패키징 및 배포 프로세스 숙지
+- Docker Hub를 통한 이미지 공유 및 협업 방식 이해
+- 최적화된 `Dockerfile` 작성법
+
