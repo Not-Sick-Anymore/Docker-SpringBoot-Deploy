@@ -32,7 +32,8 @@
 ### **1️⃣ Spring Boot `.jar` 파일 생성**
 
 - Spring Boot 프로젝트를 빌드하여 실행 가능한 `.jar` 파일 생성
-
+<img src="img/1.png" alt="이미지 1" width=700>
+- STS 기준: Run As > Run Configurations > Gradle Task 
 
 ### **2️⃣ Dockerfile 작성**
 
@@ -129,7 +130,7 @@ CMD ["java", "-jar", "app.jar"]
 
 💙 **각 Dockerfile 조회 및 비교**
 
-![image.png](attachment:990a13a5-fe31-4bb9-bb88-f2eeae3b6d53:image.png)
+<img src="img/2.png" alt="이미지 2" width=700>
 
 - **개발 및 디버깅이 중요한 경우** → `정파란 Dockerfile (openjdk:17-jdk)`
 - **적절한 경량화와 호환성을 원하면** → `이은준 Dockerfile (openjdk:17-jdk-slim)`
@@ -146,7 +147,7 @@ CMD ["java", "-jar", "app.jar"]
     - <DOCKERHUB ID/IMAGE NAME:TAG> : Docker Hub에 업로드할 때 사용할 이름과 태그
     - 같은 이미지로 Tag만 다르게 한다면 동일 레포지토리에 업로드
     
-    ![image.png](attachment:5bd72b15-98f9-40ad-a1d9-1fa756d85e7e:image.png)
+    <img src="img/3.png" alt="이미지 3" width=700>
 
 
 
@@ -171,7 +172,7 @@ $docker push <DOCKERHUB ID/IMAGE NAME:TAG>
 - **Docker Hub에서 푸시된 이미지 확인**
 - DockerHub에서 **`2eunjun/springboot-app:1.0`** 이미지 확인 가능
 
-![image.png](attachment:5bd72b15-98f9-40ad-a1d9-1fa756d85e7e:image.png)
+<img src="img/4.png" alt="이미지 4" width=700>
 
 
 
@@ -206,7 +207,7 @@ $docker ps
 
 - **컨테이너에서 실행 중인 Spring Boot 애플리케이션이 정상적으로 응답하는지 확인**
     
-    ![image.png](attachment:f03cd5f6-c789-40d6-a345-dc1176db284a:image.png)
+    <img src="img/5.png" alt="이미지 5">
     
 1. 터미널에서 curl 통해 확인
     
@@ -214,7 +215,7 @@ $docker ps
     $curl http://localhost:8080/woori/fisa
     ```
     
-    ![제목 없음.png](attachment:7dea3305-d5c4-488e-9a3b-63474ccbb87d:제목_없음.png)
+    <img src="img/6.png" alt="이미지 6">
     
 2. 포트포워딩을 진행한 경우, 웹 브라우저에서 확인 가능
     
@@ -222,7 +223,7 @@ $docker ps
     	http://localhost:8080/woori/fisa
     ```
     
-    ![image.png](attachment:b08116a3-7d2b-490a-b162-c14617fe79de:image.png)
+    <img src="img/7.png" alt="이미지 7">
 
 
 
