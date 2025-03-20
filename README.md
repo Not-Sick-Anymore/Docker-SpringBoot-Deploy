@@ -11,7 +11,7 @@
 3. [📌 최종 과정 요약](#-최종-과정-요약)
 4. [📚 프로젝트에서 배운 점](#-프로젝트에서-배운-점)
 
-### 🙆🏻‍♂️ 팀원
+## 🙆🏻‍♂️ 팀원
 
 #### 팀명 : Ctrl-4
 우리FISA 4기 클라우드 엔지니어링 Ctrl-4팀
@@ -20,10 +20,12 @@
 |:-:|:-:|:-:|:-:|
 |김예진<br/>[@yeejkim](https://github.com/yeejkim)|이슬기<br/>[@seulg2027](https://github.com/seulg2027)|이은준<br/>[@2EunJun](https://github.com/2EunJun)|정파란<br/>[@BlueRedOrange](https://github.com/BlueRedOrange)|
 
+---
+
 <br>
 
 
-# 🚀 Docker 기반 Spring Boot Application 최적화 & 배포
+## 🐳 프로젝트 개요 - Docker를 활용한 Spring Boot 배포
 
 본 레퍼지토리는 Spring Boot 애플리케이션을 Docker 컨테이너로 패키징하여, DockerHub에 업로드하고, 다른 사용자가 이를 Pull하여 실행하는 과정을 수행합니다.
 
@@ -33,14 +35,16 @@
 3. Dockerfile 최적화 
 4. DockerHub push
 5. 팀원들 간 pull 통한 실행 및 검증
+---
 
-# 🛠 미션 수행 과정
+## 🛠 미션 수행 과정
 
 ### **1️⃣ Spring Boot `.jar` 파일 생성**
 
 - Spring Boot 프로젝트를 빌드하여 실행 가능한 `.jar` 파일 생성
 <img src="img/1.png" alt="이미지 1" width=700>
 - STS 기준: Run As > Run Configurations > Gradle Task 
+---
 
 ### **2️⃣ Dockerfile 작성**
 
@@ -231,10 +235,10 @@ $docker ps
     ```
     
     <img src="img/7.png" alt="이미지 7">
+---
 
 
-
-  ## **📌 최종 과정 요약**
+## **📌 최종 과정 요약**
 
 | 단계 | 명령어 |
 | --- | --- |
@@ -245,7 +249,7 @@ $docker ps
 | **이미지 Pull** | `docker pull <(DockerID포함)Image Name:tag>` |
 | **컨테이너 실행** | `docker run --name <Container Name> -p <Host Port:Container Port> <(DockerID포함)Image Name>` |
 | **실행 확인** | `docker ps` |
-
+---
 
 ## **📚 프로젝트에서 배운 점**
 - Docker를 활용한 Spring Boot 애플리케이션 패키징 및 배포 프로세스 숙지
