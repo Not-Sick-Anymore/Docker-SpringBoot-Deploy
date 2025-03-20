@@ -5,6 +5,13 @@
 </div>
 </br>
 
+## 목차
+1. [🙆🏻‍♂️ 팀원](-팀원)
+2. [🚀 Docker 기반 Spring Boot Application 최적화 & 배포](#-docker-기반-spring-boot-application-최적화--배포)
+3. [🛠 미션 수행 과정](#-미션-수행-과정)
+4. [📌 최종 과정 요약](#-최종-과정-요약)
+5. [🏝 고찰](#-고찰)
+
 ### 🙆🏻‍♂️ 팀원
 
 #### 팀명 : Ctrl-4
@@ -28,7 +35,7 @@
 4. DockerHub push
 5. 팀원들 간 pull 통한 실행 및 검증
 
-# 미션 수행 과정
+# 🛠 미션 수행 과정
 
 ### **1️⃣ Spring Boot `.jar` 파일 생성**
 
@@ -241,7 +248,7 @@ $docker ps
 | **실행 확인** | `docker ps` |
 
 
-## **🏝 고찰**
+## **📚 프로젝트에서 배운 점**
 - Docker를 활용한 Spring Boot 애플리케이션 패키징 및 배포 프로세스 숙지
 - Docker Hub를 통한 이미지 공유 및 협업 방식 이해
 - 최적화된 `Dockerfile` 작성법
